@@ -1,0 +1,32 @@
+[build-system]
+
+requires = ["hatchling"]
+
+build-backend = "hatchling.build"
+
+
+[project]
+
+name = "grass-spider"
+
+version = "1.1a1"
+
+description = ""
+
+readme = "README.md"
+
+license = "MIT"
+
+requires-python = ">= 3.9"
+
+dependencies = [
+     "playwright",
+     'pytest',
+     'pyyaml'
+]
+
+authors = [
+    {name = "Yomi Sosanya", email = "perchingeagle@gmail.com"}
+]
+
+
