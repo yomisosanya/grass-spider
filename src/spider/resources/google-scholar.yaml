@@ -1,0 +1,25 @@
+
+---
+
+# required
+header:
+    "site": [
+        "https://scholar.google.com/"
+    ]
+
+# break the file into smaller parts
+# to reduce the amount stored in memory
+# at runtime
+---
+
+# required
+body:
+
+    search:
+        # query:
+
+        result:
+            limit: 10
+            path: []
+        
+    
