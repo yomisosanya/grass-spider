@@ -1,13 +1,14 @@
 import settings
 import yaml
-import typing as t
+from typing import Dict, Union
+from collections.abc import Any, Iterator
 from pathlib import Path
 
-def load(path: t.Union [str, Path]):
+def load(path: Union [str, Path]) -> Iterator[Any]:
     with open(path, 'r') as file:
         data = yaml.safe_load(file)
     return data
 
-def read_instr(file):
+def read_instr(data: Dict):
     pass
 
