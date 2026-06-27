@@ -1,4 +1,6 @@
+
 from pathlib import Path
+import logging
 
 ### Important Instructions ###
 
@@ -23,7 +25,13 @@ RESOURCES_PATH = ''
 
 TARGET_PATH = ''
 
-LOGGING_CONFIG = {
-    'version': 1,
-    'handlers': {}
-}
+# number of sites added to the yaml file that will be processed
+URL_COUNT = 3
+
+# LOGGING_CONFIG = {
+#     'version': 1,
+#     'handlers': {},
+#     'formatters': {}
+# }
+
+# logging.config.dictConfig(LOGGING_CONFIG)

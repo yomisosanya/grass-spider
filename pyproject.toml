@@ -13,20 +13,26 @@ version = "1.1a1"
 
 description = ""
 
-readme = "README.md"
 
 license = "MIT"
 
-requires-python = ">= 3.9"
+requires-python = ">= 3.10"
 
 dependencies = [
      "playwright",
-     'pytest',
-     'pyyaml'
+     'pytest'
+    #  'pydantic',
+    #  'pyyaml'
 ]
 
-authors = [
-    {name = "Yomi Sosanya", email = "perchingeagle@gmail.com"}
-]
+[project.scripts]
+spider = "spider.__main__:main"
+
+# authors = [
+#     {name = "Yomi Sosanya", email = "perchingeagle@gmail.com"}
+# ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/spider"]
 
 

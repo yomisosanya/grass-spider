@@ -1,25 +1,31 @@
+---
+
+"type" : "search"
+
 
 ---
 
-# required
-header:
-    "site": [
-        "https://scholar.google.com/"
-    ]
+"site" : [
+    "https://scholar.google.com/"
+]
+
 
 # break the file into smaller parts
 # to reduce the amount stored in memory
 # at runtime
 ---
 
-# required
-body:
+"search-id" : ""
 
-    search:
-        # query:
+"action" : "" 
 
-        result:
-            limit: 10
-            path: []
+"submit" : ""
+
+"result-id" : ""
+
+"resultset": []
+
+"limit": 10 
+
         
     
